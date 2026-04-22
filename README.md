@@ -1,14 +1,5 @@
 # **Resume Analyser With NLP on Streamlit**
 
-
-
-
-
-
-## Deployment
- 
-    1. Model Building and Tuning
-    2. Building Flask API
    
 ## Installation
 
