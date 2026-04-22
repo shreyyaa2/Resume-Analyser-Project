@@ -17,9 +17,10 @@ role_skills = {
     "web developer": ["html", "css", "javascript", "react"],
     "android developer": ["java", "kotlin", "android"],
     "manager": ["communication", "leadership", "team management", "project management", "planning"],
-    "ui/ux designer": ["figma", "wireframing", "prototyping", "user research"]
+    "ui/ux designer": ["figma", "wireframing", "prototyping", "user research"],
+    "testing":["Functional", "Regression", "Smoke testing",
+    "Test scenarios & test plans","Github copilot"]
 }
-
 
 # ---------- FUNCTIONS ----------
 def pdf_reader(file):
@@ -78,7 +79,7 @@ if pdf_file:
             role_lower = role.lower()
 
             if role_lower in role_skills:
-                required = role_skills[role_lower]
+                required = [s.lower() for s in role_skills[role_lower]]
                 missing = [s for s in required if s not in user_skills]
 
                 st.subheader("📊 Role Analysis")
