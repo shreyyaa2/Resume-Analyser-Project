@@ -36,10 +36,9 @@ below steps:
         #2.1 create two more folders inside this folder (Logo and Uploaded_Resumes)
         #2.2 create two python files (App.py and Courses.py)
 
-# 3. START YOUR SQL DATABASE
 
 
-# 4. CONTINUE WITH THE FOLLOWING CODE...
+# 3. CONTINUE WITH THE FOLLOWING CODE...
 
 import streamlit as st
 import pandas as pd
@@ -56,8 +55,7 @@ import io,random
 from streamlit_tags import st_tags
 from PIL import Image
 import pymysql
-from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
-import pafy #for uploading youtube videos
+from Courses import ds_course,web_course,android_course,ios_course,uiux_course
 import plotly.express as px #to create visualisations at the admin session
 import nltk
 nltk.download('stopwords')
